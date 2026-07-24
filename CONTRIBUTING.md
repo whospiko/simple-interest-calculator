@@ -1,111 +1,92 @@
 # Contributing
 
-Please feel free to submit pull requests or open issues to improve Contributor Covenant, whether through code, content, design, or [translations](https://www.contributor-covenant.org/translations).
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. 
 
-If you're new to contributing to projects hosted on Github, or need a refresher, you may find [How to make your first pull request on GitHub](https://www.freecodecamp.org/news/how-to-make-your-first-pull-request-on-github-3/) a useful resource.
+Please note we have a code of conduct, please follow it in all your interactions with the project.
 
-Check the [issues](https://github.com/EthicalSource/contributor_covenant/issues) for the latest discussions involving the current and future versions of the Contributor Covenant. If your question, concern, or suggestion is not already listed, please open a new issue using the **New Issue** button, and select either the **🪲Bug Report** or **💡Feature Request** template.
+## Pull Request Process
 
-## Adding Your Community to the List of Adopters
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+   build.
+2. Update the README.md with details of changes to the interface, this includes new environment 
+   variables, exposed ports, useful file locations and container parameters.
+3. Increase the version numbers in any examples files and the README.md to the new version that this
+   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).
+4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
+   do not have permission to do that, you may request the second reviewer to merge it for you.
 
-* Fork the repository.
-* Edit the `assets/adopters.csv` file
-* Add a row with your project or community name in the first column, and its URL in the second column.
-* For human readability, please make sure that you've preserved alphabetical order in the list.
-* Open a pull request.
+## Code of Conduct
 
-## We respect and appreciate different kinds of contributions
+### Our Pledge
 
-Ways that you can contribute:
+In the interest of fostering an open and welcoming environment, we as
+contributors and maintainers pledge to making participation in our project and
+our community a harassment-free experience for everyone, regardless of age, body
+size, disability, ethnicity, gender identity and expression, level of experience,
+nationality, personal appearance, race, religion, or sexual identity and
+orientation.
 
-### Community governance experts
+### Our Standards
 
-We value collaboration with contributors who bring their experience with code of conduct design or enforcement to continue to improve Contributor Covenant.
+Examples of behavior that contributes to creating a positive environment
+include:
 
-### Writers and copy editors
+* Using welcoming and inclusive language
+* Being respectful of differing viewpoints and experiences
+* Gracefully accepting constructive criticism
+* Focusing on what is best for the community
+* Showing empathy towards other community members
 
-We welcome contributions to improve the language of our site.
+Examples of unacceptable behavior by participants include:
 
-### Designers
+* The use of sexualized language or imagery and unwelcome sexual attention or
+advances
+* Trolling, insulting/derogatory comments, and personal or political attacks
+* Public or private harassment
+* Publishing others' private information, such as a physical or electronic
+  address, without explicit permission
+* Other conduct which could reasonably be considered inappropriate in a
+  professional setting
 
-We welcome improvements to the design elements of our website or other ways that you can use your talents to improve [contributor-covenant.org](https://contributor-covenant.org).
+### Our Responsibilities
 
-### Translators and native speakers
+Project maintainers are responsible for clarifying the standards of acceptable
+behavior and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behavior.
 
-We're always looking for translations by native speakers are thankful to the dozens of volunteer translators and reviewers who have donated their time and expertise.
+Project maintainers have the right and responsibility to remove, edit, or
+reject comments, commits, code, wiki edits, issues, and other contributions
+that are not aligned to this Code of Conduct, or to ban temporarily or
+permanently any contributor for other behaviors that they deem inappropriate,
+threatening, offensive, or harmful.
 
-If you are a native speaker interested in doing a translation, please follow these steps:
+### Scope
 
-1. Fork the repository and make a branch for your translation.
-1. If it's a new language, add it to `config.toml`, with a localized name and language code/optional region (e.g. `pt` or `pt-br`).
-1. Create a markdown file with your translation in `version/3/0/code_of_conduct.LANGUAGECODE.md`. (Underscores, not hyphens.) Use the English markdown file as an example.
-1. Update the two fields at the top of your new markdown file: `reportingPlaceholder`, which should contain the exact placeholder text in the "how to report" section, and `enforcementPlaceholder`, which should contain the exact placeholder text in the "Addressing and Repairing Harm" section.
-1. Open a pull request.
-1. We will put out a call to have one or more other native speakers review the translation.
-1. Collaborate until the translation is satisfactory.
-1. We will merge your translation!
-1. HTML and plain text versions are automatically generated from your markdown file.
-1. A link to your translation is automatically added to the translations page.
+This Code of Conduct applies both within project spaces and in public spaces
+when an individual is representing the project or its community. Examples of
+representing a project or community include using an official project e-mail
+address, posting via an official social media account, or acting as an appointed
+representative at an online or offline event. Representation of a project may be
+further defined and clarified by project maintainers.
 
-Note that we will not accept machine translations.
+### Enforcement
 
-### Developers
+Instances of abusive, harassing, or otherwise unacceptable behavior may be
+reported by contacting the project team at [INSERT EMAIL ADDRESS]. All
+complaints will be reviewed and investigated and will result in a response that
+is deemed necessary and appropriate to the circumstances. The project team is
+obligated to maintain confidentiality with regard to the reporter of an incident.
+Further details of specific enforcement policies may be posted separately.
 
-Code contributions to improve the development or operation of the [contributor-covenant.org](https://contributor-covenant.org) web site are welcome. To do so, first check to make sure your issue is not already listed in the [issues](https://github.com/EthicalSource/contributor_covenant/issues).
+Project maintainers who do not follow or enforce the Code of Conduct in good
+faith may face temporary or permanent repercussions as determined by other
+members of the project's leadership.
 
-#### Build the website locally
+### Attribution
 
-1. To build the website locally, first [fork](https://github.com/EthicalSource/contributor_covenant/fork) the repo and then clone it to your local machine.
-2. [install Hugo](https://gohugo.io/getting-started/installing) using your package manager of choice.
+This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
+available at [http://contributor-covenant.org/version/1/4][version]
 
-For example, on Debian/Ubuntu:
-
-```bash
-apt-get install hugo
-```
-
-If you are using Arch Linux:
-
-```bash
-pacman -S hugo
-```
-
-If you are using [Homebrew](https://brew.sh) on macOS:
-
-```bash
-brew install hugo
-```
-
-3. From the repository's root directory, start the development server and then view it at http://localhost:1313/.
-
-```bash
-hugo server -D
-```
-
-4. Any changes you make will be reflected in the browser.
-
-#### Code Style
-
-- Use spaces for indentation
-- Order properties alphabetically
-
-##### HTML
-
-- Include `alt` attribute for all images
-- Include `title` attribute for all links
-- Close all your tags properly
-
-##### CSS
-
-- Try to use classes instead of IDs unless things are absolutely unique
-- One selector per line
-- Support all modern browsers
-- Use `rem` over `em` or `px`
-- Capitalize hexadecimal
-- Breaking lines should be `1px solid #CCC`
-- Maintain [contrast](https://webaim.org/resources/contrastchecker/) to WCAG AA on normal text, WCAG AAA on large text
-- Use colors from [this palette](https://color.adobe.com/Royal-Purples-color-theme-7468845/edit/?copy=true&base=2&rule=Custom&selected=4&name=Copy%20of%20Royal%20Purples&mode=rgb&rgbvalues=0.2980392156862745,0.06666666666666667,0.3803921568627451,0.8,0.14901960784313725,0.1411764705882353,0.403921568627451,0,0.6784313725490196,0.5372549019607843,0.12156862745098039,0.6784313725490196,1,0.7137254901960784,0.08627450980392157&swatchOrder=0,1,2,3,4)
-
-##### Markdown
-
-- Do not use fancy quotes, dashes, and such; the Markdown processor will handle that.
+[homepage]: http://contributor-covenant.org
+[version]: http://contributor-covenant.org/version/1/4/
